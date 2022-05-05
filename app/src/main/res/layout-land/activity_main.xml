@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="176dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/zenit" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="177dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/dinamo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="200dp"
+        android:onClick="Click"
+        android:text="Динамо"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="98dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="200dp"
+        android:onClick="Click2"
+        android:text="Зенит"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="322dp"
+        android:layout_marginEnd="322dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Click3"
+        android:text="Сброс"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="34dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="39dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text=":"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
